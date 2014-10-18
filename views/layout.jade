@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    link(rel='stylesheet', src='//normalize-css.googlecode.com/svn/trunk/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')    
+    link(rel='stylesheet', href='/stylesheets/pushy.css')
+  body
+    nav.pushy.pushy-left
+      ul
+        li
+          a(href='#') Item 1
+        li
+          a(href='#') Item 2
+    div.site-overlay
+    div#container
+      div.menu-btn &#9776;
+      block content
+    script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+    script(src='/javascripts/pushy.min.js')
